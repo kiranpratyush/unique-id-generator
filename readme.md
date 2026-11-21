@@ -96,3 +96,9 @@ Browse results with `../maelstrom/maelstrom serve` (http://localhost:8080).
 
 Note: Snowflake IDs reveal creation time and approximate volume, so they
 should not be used where IDs must be unguessable.
+
+## Further learning
+
+[LEARNING.md](LEARNING.md) lists the systems concepts behind this project
+(clocks, process pauses, concurrency, durability, leases) with references
+and hands-on exercises.
