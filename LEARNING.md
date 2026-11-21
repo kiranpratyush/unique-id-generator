@@ -13,7 +13,7 @@ why it matters *here*, where to learn it, and a small exercise in this repo.
 
 ## 1. Data representation
 
-- [ ] **Two's complement and the sign bit**
+- [X] **Two's complement and the sign bit**
   - Why: the top bit is 0 so IDs stay positive in signed types; `uint64(-5)` becomes a huge number.
   - Learn: CS:APP ch. 2 (integer representation).
   - Exercise: print `-1`, `-5` and `MaxInt64` as `%064b` and explain every bit.
