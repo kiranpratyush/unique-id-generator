@@ -50,6 +50,7 @@ from them, so changing the split means editing two numbers.
 | `snowflake.go`  | bit layout, pack/decode, the generator                |
 | `main.go`       | Maelstrom node: handles `generate`, maps `nN` → machine id `N` |
 | `main_test.go`  | round-trip, bit-layout, sign-bit, validation and ordering tests |
+| `snowflake_test.go` | generator tests with fake clocks: same-ms sequencing, reset on new ms, overflow wait, backwards clock, concurrent uniqueness |
 
 ## Running
 
@@ -86,8 +87,6 @@ Browse results with `../maelstrom/maelstrom serve` (http://localhost:8080).
 
 ## Not production-ready yet
 
-- Generator tests with a fake clock (same-ms sequencing, overflow wait,
-  backwards clock, concurrent uniqueness).
 - Machine id assignment outside Maelstrom (config, StatefulSet ordinal, or
   leases via etcd/ZooKeeper).
 - Tolerating small backward clock steps; protecting against restarts with a
